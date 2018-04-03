@@ -131,8 +131,8 @@ Set_Node_ID(){
 }
 Set_Iptables_Port(){
 	echo "请设置要安装的ShadowsocksR 服务端 开放的端口(端口段中间用:号代替)"
-	stty erase '^H' && read -p "(默认: 10000:20000):" SSR_Port
-	[[ -z "${SSR_Port}" ]] && SSR_Port="10000:20000"
+	stty erase '^H' && read -p "(默认: 3000:20000):" SSR_Port
+	[[ -z "${SSR_Port}" ]] && SSR_Port="3000:20000"
 	echo && echo ${Separator_1} && echo -e "	节点ID : ${Green_font_prefix}${SSR_Port}${Font_color_suffix}" && echo ${Separator_1} && echo
 }
 Set_config_Ipv6(){
